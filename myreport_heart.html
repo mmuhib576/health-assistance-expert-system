@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+  <title>Medical Report</title>
+  <link rel="icon" href="logo.png" type="image/icon type">
+
+  <style >
+    .css{
+      background-color: rgb(36, 37, 130);
+      color : white;
+      font-family: century gothic;
+      font-weight: bold;
+      text-align:left;
+      font-size: 20px;
+      padding-top: 30px;
+
+      }
+
+      .css2{
+        font-size: 15px;
+        font-family: century gothic;
+        font-weight: bold;
+        text-align:center;
+        text-decoration: underline;
+        padding-left: 10px
+          }
+
+       .table{
+
+         font-family: century gothic;
+         font-weight: bold;
+         font-size: 25px;
+         text-align: right;
+        }
+
+      p {
+        font-family: century gothic;
+        font-weight: bold;
+        font-size: 20px;
+
+      }
+  </style>
+
+  <body>
+    <img src="file:{{photo}}" align=left width="180" height="180"  >
+    <div class="css">
+
+  <h1>HEALTH ASSISTANCE EXPERT SYSTEM<br><br></h1>
+    </div>
+    <div class="css2">
+      <br>
+      <h1>DISEASE PREDICTION RESULT</h1> <br>
+    </div>
+
+    <div class="table">
+      <table  align="center"  >
+      <tr><th>Name :</th><td>&nbsp &nbsp  {{nam}}</td></tr>
+      <tr><th>Patient ID :</th><td> {{pid}}</td></tr>
+      <tr><th>Contact Number :</th><td> {{con}}</td></tr>
+    </table>
+  </div> <br><br>
+    <hr>
+   <div class="table">
+      <table  align="center"  >
+<tr><th>AGE:</th><td>{{age}}</td></tr>
+<tr><th>GENDER:</th><td>{{gen}}</td></tr>
+<tr><th>CHEST PAIN TYPE:</th><td>{{cpt}}</td></tr>
+<tr><th>REST BP:</th><td>{{rbp}}</td></tr>
+<tr><th>CHOLESTROL:</th><td>{{chol}}</td></tr>
+<tr><th>FAST SUGAR:</th><td>{{sugl}}</td></tr>
+<tr><th>REST ECG:</th><td>{{recg}}</td></tr>
+<tr><th>HEART RATE:</th><td>{{rate}}</td></tr>
+<tr><th>ANGINA:</th><td>{{ang}}</td></tr>
+<tr><th>OLD PEAK:</th><td>{{oldp}}</td></tr>
+<tr><th>SLOPE:</th><td>{{slope}}</td></tr>
+<tr><th>VESSELS IN TEST:</th><td>{{vssl}}</td></tr>
+<tr><th>THALASSEMIA:</th><td>{{thal}}</td></tr>
+</table>
+  </div> <br><br><hr>
+
+    <div class="css2">
+      <h1>CONCLUSION</h1>
+    </div>
+     <center><p>There are {{res}} of Heart Risk.</p></center>
+
+  </body>
+</head>
